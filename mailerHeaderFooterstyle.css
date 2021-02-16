@@ -1,0 +1,337 @@
+
+  .sub-Header-Footer{
+      
+      display: flex;
+      justify-content: center;
+  }
+
+  .Footerdropbtn {
+    background-color: #f4f2e5;
+    color: #000000;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+}
+
+.Footerdropbtn:hover{
+    border-bottom: 5px solid maroon ;
+}
+
+.Footerdropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.Footerdropdown:hover .Footerdropbtn {
+    
+    background-color: #f4f2e5;
+}
+
+.Footer-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 80%;
+    left: -200%; 
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 1600%;
+    height: 400px;
+}
+
+.Footer-dropdown-content a {
+    color: black;
+    padding: 5px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.Footer-dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.Footerdropdown:hover .Footer-dropdown-content {
+    display: block;
+}
+
+
+.Footer-dropdown-content1 {
+    display: none;
+    position: absolute;
+    right: 80%;
+    left: -280%; 
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 1550%;
+    height: 400px;
+}
+
+.Footer-dropdown-content1 a {
+    color: black;
+    padding: 5px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.Footer-dropdown-content1 a:hover {
+    background-color: #ddd;
+}
+
+.Footerdropdown:hover .Footer-dropdown-content1 {
+    display: block;
+}
+
+.Footer-dropdown-content2 {
+    display: none;
+    position: absolute;
+    right: 80%;
+    left: -520%; 
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 2050%;
+    height: 400px;
+}
+
+.Footer-dropdown-content2 a {
+    color: black;
+    padding: 5px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.Footer-dropdown-content2 a:hover {
+    background-color: #ddd;
+}
+
+.Footerdropdown:hover .Footer-dropdown-content2 {
+    display: block;
+}
+
+.Footer-dropdown-content3 {
+    display: none;
+    position: absolute;
+    right: 80%;
+    left: -630%; 
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 2100%;
+    height: 400px;
+}
+
+.Footer-dropdown-content3 a {
+    color: black;
+    padding: 5px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.Footer-dropdown-content3 a:hover {
+    background-color: #ddd;
+}
+
+.Footerdropdown:hover .Footer-dropdown-content3 {
+    display: block;
+}
+
+.Footer-dropdown-content4 {
+    display: none;
+    position: absolute;
+    right: 80%;
+    left: -410%; 
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 1200%;
+    height: 400px;
+}
+
+.Footer-dropdown-content4 a {
+    color: black;
+    padding: 5px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.Footer-dropdown-content4 a:hover {
+    background-color: #ddd;
+}
+
+.Footerdropdown:hover .Footer-dropdown-content4 {
+    display: block;
+}
+
+.Footer-dropdown-content5 {
+    display: none;
+    position: absolute;
+    right: 80%;
+    left: -610%; 
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 1400%;
+    height: 400px;
+}
+
+.Footer-dropdown-content5 a {
+    color: black;
+    padding: 5px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.Footer-dropdown-content5 a:hover {
+    background-color: #ddd;
+}
+
+.Footerdropdown:hover .Footer-dropdown-content5 {
+    display: block;
+}
+
+.Footer-dropdown-content6 {
+    display: none;
+    position: absolute;
+    right: 80%;
+    left: -580%; 
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 1150%;
+    height: 400px;
+}
+
+.Footer-dropdown-content6 a {
+    color: black;
+    padding: 5px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.Footer-dropdown-content6 a:hover {
+    background-color: #ddd;
+}
+
+.Footerdropdown:hover .Footer-dropdown-content6 {
+    display: block;
+}
+
+.Footer-dropdown-content7 {
+    display: none;
+    position: absolute;
+    right: 80%;
+    left: -950%; 
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 1630%;
+    height: 400px;
+}
+
+.Footer-dropdown-content7 a {
+    color: black;
+    padding: 5px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.Footer-dropdown-content7 a:hover {
+    background-color: #ddd;
+}
+
+.Footerdropdown:hover .Footer-dropdown-content7 {
+    display: block;
+}
+
+.Footer-dropdown-content8 {
+    display: none;
+    position: absolute;
+    right: 80%;
+    left: -1220%; 
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 1900%;
+    height: 400px;
+}
+
+.Footer-dropdown-content8 a {
+    color: black;
+    padding: 5px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.Footer-dropdown-content8 a:hover {
+    background-color: #ddd;
+}
+
+.Footerdropdown:hover .Footer-dropdown-content8 {
+    display: block;
+}
+
+.Footer-dropdown-content9 {
+    display: none;
+    position: absolute;
+    right: 80%;
+    left: -900%; 
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 1300%;
+    height: 400px;
+}
+
+.Footer-dropdown-content9 a {
+    color: black;
+    padding: 5px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.Footer-dropdown-content9 a:hover {
+    background-color: #ddd;
+}
+
+.Footerdropdown:hover .Footer-dropdown-content9 {
+    display: block;
+}
+
+.Footer-dropdown-content10 {
+    display: none;
+    position: absolute;
+    right: 80%;
+    left: -800%; 
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 1020%;
+    height: 400px;
+}
+
+.Footer-dropdown-content10 a {
+    color: black;
+    padding: 5px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.Footer-dropdown-content10 a:hover {
+    background-color: #ddd;
+}
+
+.Footerdropdown:hover .Footer-dropdown-content10 {
+    display: block;
+}
