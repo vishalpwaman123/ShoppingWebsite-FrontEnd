@@ -1,0 +1,50 @@
+.Footer-Container-1{
+    height: 76%;
+    display: flex;
+}
+
+.Footer-Container-2{
+    height: 24%;
+    background-color: #dbd9cd
+}
+
+.Footer-Container hr{
+
+    margin: 5px 8% 5px 8%;
+    width: 84%;
+    border-top: 1px solid #969595;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Footer-Container-Colume{
+    width: 20%;
+    height: 100%;
+    border: 1px solid rgb(153, 153, 153);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer-Container-Colume-Header{
+    font-size: 16px;
+    font-family: 'Unna',serif;
+    text-transform: none;
+    color: #000;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.Footer-Container-Colume-SubHeader a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}

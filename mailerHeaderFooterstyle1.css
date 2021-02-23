@@ -1,3 +1,7 @@
+ .sub-Header-Footers{
+     height: 100%;
+ }
+ 
  .sub-Footer-dropdown-content{
     display: flex;
     align-items: center;
@@ -18,6 +22,12 @@
     margin: 30px 0px 0px 0px;
  }
 
+ .sub-Footer-dropdown-content8{
+    display: flex;
+    justify-content: center;
+    margin: 30px 30px 30px 30px;
+ }
+
  .Footer-Women-Text{
      display: flex;
      justify-content: center;
@@ -28,12 +38,31 @@
     justify-content: center;
  }
 
+ .Footer-Food-Text{
+    display: flex;
+    justify-content: center;
+ }
+
+ .Sub-Footer-Food-Text{
+    display: flex;
+    flex-wrap: wrap;
+ }
+
  .Footer-Women-Text-column{
     margin: 7px 15px 15px 20px;
  }
 
  .Footer-Men-Text-column{
     margin: 7px 15px 15px 20px;
+ }
+
+ .Footer-Kids-Text-column{
+    margin: 7px 30px 15px 30px;
+ }
+
+ .Footer-Food-Text-column{
+    margin: 0px 15px 5px 20px;
+    width: 110px;
  }
 
  .Footer-Women-Text-column-Header a:-webkit-any-link {
@@ -43,6 +72,7 @@
     text-decoration: none;
     cursor: pointer;
     font-size: 12px;
+    margin: 0px 0px 05px 0px;
  }
 
  .Footer-Men-Text-column-Header a:-webkit-any-link {
@@ -52,6 +82,19 @@
     text-decoration: none;
     cursor: pointer;
     font-size: 12px;
+    margin: 0px 0px 05px 0px;
+ }
+
+ .Footer-Food-Text-column-Header a:-webkit-any-link {
+    display: flex;
+    flex-wrap: wrap;
+    color: #8f2c34;
+    font-weight: bold;
+    font-family: 'Muli','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0px 0px 05px 0px;
  }
 
  .Footer-Women-Text-column-SubHeader {
@@ -74,16 +117,43 @@
     color: #3d3d3d;
 }
 
+.Footer-Food-Text-column-SubHeader {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: start;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Muli','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #3d3d3d;
+    text-overflow: ellipsis;
+}
+
 .Footer-Women-Text-column-SubHeader a:-webkit-any-link{
     color: #3d3d3d;
     text-decoration: none;
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .Footer-Men-Text-column-SubHeader a:-webkit-any-link{
     color: #3d3d3d;
     text-decoration: none;
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.Footer-Food-Text-column-SubHeader a:-webkit-any-link{
+    color: #3d3d3d;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
  .Footer-Women-Image{
@@ -93,6 +163,12 @@
  }
 
  .Footer-Men-Image{
+    width: 300px;
+    height: 300px;
+}
+
+.Footer-Food-Image{
+    /* margin: 0.5%; */
     width: 300px;
     height: 300px;
 }
@@ -137,4 +213,10 @@
 .Footer-Image4{
     height: 100%;
     width: 100%;
+}
+
+.Footer-Header{
+    color: #8f2c34;
+    font-weight: bold;
+    font-family: 'Muli','Helvetica Neue',Helvetica,Arial,sans-serif;
 }

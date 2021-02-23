@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="mailerstyle.css">
     <link rel="stylesheet" href="mailerHeaderFooterstyle.css">
     <link rel="stylesheet" href="mailerHeaderFooterstyle1.css">
+    <link rel="stylesheet" href="mailerHeaderSider.css">
+    <link rel="stylesheet" href="mailerFooter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -30,6 +32,24 @@
                 }
             }
         }
+
+    </script>
+    <script>
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+
     </script>
 
     <div class="header-Container">
@@ -85,7 +105,7 @@
                 </div>
             </div>
             <div class="sub-Header-Footer">
-                <div class="sub-Header-Footer-JustIn">
+                <div class="sub-Header-Footers">
                     <div class="Footerdropdown">
                         <button class="Footerdropbtn">Just In!&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="10"
                                 height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -118,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sub-Header-Footer-Women">
+                <div class="sub-Header-Footers">
                     <div class="Footerdropdown">
                         <button class="Footerdropbtn">Women&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="10"
                                 height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -208,7 +228,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sub-Header-Footer-Men">
+                <div class="sub-Header-Footers">
                     <div class="Footerdropdown">
                         <button class="Footerdropbtn">Men&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="10"
                                 height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -275,7 +295,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sub-Header-Footer-Kids">
+                <div class="sub-Header-Footers">
                     <div class="Footerdropdown">
                         <button class="Footerdropbtn">Kids&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="10"
                                 height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -283,13 +303,73 @@
                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                             </svg></button>
                         <div class="Footer-dropdown-content3">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <div class="sub-Footer-dropdown-content2">
+                                <div class="Footer-Men-Text">
+                                    <div class="Footer-Kids-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Girls</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Kurtas</a>
+                                            <a href="#">Dresses</a>
+                                            <a href="#">Tops & Tunics</a>
+                                            <a href="#">Sets</a>
+                                            <a href="#">Skirts</a>
+                                            <a href="#">Bottoms</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Kids-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Boys</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Kurtas</a>
+                                            <a href="#">Shirts</a>
+                                            <a href="#">Jackets</a>
+                                            <a href="#">Stoles</a>
+                                            <a href="#">Bottoms</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Kids-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Infants</a>
+                                        </div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Boys</a>
+                                            <a href="#">Girls</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Kids-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Accessories</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Face Masks</a>
+                                            <a href="#">Jewellery</a>
+                                            <a href="#">Footwear</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Kids-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Sleepewear</a></div>
+                                        <div class="Footer-Men-Text-column-Header">
+                                            <a href="#">sale!</a>
+                                            <a href="#">Collection</a>
+                                        </div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Gifting Ideas</a>
+                                            <a href="#">Rajwada Collection</a>
+                                            <a href="#">Malhar Collection</a>
+                                            <a href="#">Indigo Collection</a>
+                                            <a href="#">Summer Collection</a>
+                                            <a href="#">Indian Spring</a>
+                                            <a href="#">Hand Block Print</a>
+                                            <a href="#">Tweens Collection</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Kids-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Style Guides</a></div>
+                                    </div>
+                                    <img src="C:\Users\Vishal\Documents\Easy\UI\Mailer\Asserts\KIDS.webp"
+                                        class="Footer-Men-Image" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="sub-Header-Footer-HomeLines">
+                <div class="sub-Header-Footers">
                     <div class="Footerdropdown">
                         <button class="Footerdropbtn">HomeLines&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="10"
                                 height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -297,13 +377,74 @@
                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                             </svg></button>
                         <div class="Footer-dropdown-content4">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <div class="sub-Footer-dropdown-content2">
+                                <div class="Footer-Men-Text">
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Bed Lines</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">BedCovers & Beds...</a>
+                                            <a href="#">Pillow Covers</a>
+                                            <a href="#">Cushion Covers</a>
+                                            <a href="#">Dohars, Quilts & T...</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Table Lines</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Mats & Napkins</a>
+                                            <a href="#">Table Covers</a>
+                                            <a href="#">Runners</a>
+                                            <a href="#">Kitchen Linen</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Bath Linen</a>
+                                        </div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Towels</a>
+                                            <a href="#">Bathmats</a>
+                                            <a href="#">Bath Accessories</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Floor Coverings</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Footmats</a>
+                                            <a href="#">Dhurries</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Curtains</a>
+                                            <a href="#">Bundle Offers</a>
+                                            <a href="#">Interior Design Solutions</a>
+                                            <a href="#">Style Guides</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Lookbook</a>
+                                            <a href="#">Sale!</a>
+                                            <a href="#">Collection</a>
+                                        </div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Festive Collection</a>
+                                            <a href="#">Home Work Edition</a>
+                                            <a href="#">Spring Collection</a>
+                                            <a href="#">Indigo Collection</a>
+                                            <a href="#">Summer Collection</a>
+                                            <a href="#">Mansoon Collection</a>
+                                            <a href="#">Hand Block Print</a>
+                                            <a href="#">Ikat Collection</a>
+                                            <a href="#">Kalamkari</a>
+                                        </div>
+                                    </div>
+                                    <img src="C:\Users\Vishal\Documents\Easy\UI\Mailer\Asserts\HOME-LINEN.jpg"
+                                        class="Footer-Men-Image" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="sub-Header-Footer-Furniture">
+                <div class="sub-Header-Footers">
                     <div class="Footerdropdown">
                         <button class="Footerdropbtn">Furniture&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="10"
                                 height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -311,13 +452,83 @@
                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                             </svg></button>
                         <div class="Footer-dropdown-content5">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <div class="sub-Footer-dropdown-content2">
+                                <div class="Footer-Men-Text">
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Living</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Sofa & Seating</a>
+                                            <a href="#">Tables</a>
+                                            <a href="#">Entertainment Units</a>
+                                            <a href="#">Bars & Cabinets</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Dining</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Tables</a>
+                                            <a href="#">Chairs & Benches</a>
+                                            <a href="#">Cabinets</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Bedroom</a>
+                                        </div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Beds</a>
+                                            <a href="#">Wardrobes</a>
+                                            <a href="#">Bedside Tables</a>
+                                            <a href="#">Chest & Drawers</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Studyroom</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Desks</a>
+                                            <a href="#">Console</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Accent &</a>
+                                            <a href="#">Accessories</a>
+                                        </div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Chairs</a>
+                                            <a href="#">Ottomans & Stools</a>
+                                            <a href="#">Consoles & Mirrors</a>
+                                            <a href="#">Blanket Box</a>
+                                            <a href="#">Racks & Shelves</a>
+                                            <a href="#">Others</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Interior Design
+                                                Solutions</a>
+                                            <a href="#">Verandah</a>
+                                            <a href="#">Storage</a>
+                                            <a href="#">Style Guides</a>
+                                            <a href="#">LookBook</a>
+                                            <a href="#">SALE!</a>
+                                            <a href="#">Collection</a>
+                                        </div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Home Work Edition</a>
+                                            <a href="#">Kashi Collection</a>
+                                            <a href="#">Nomad Collection</a>
+                                            <a href="#">Bunai Collection</a>
+                                            <a href="#">Quadro Collection</a>
+                                            <a href="#">Akund Collection</a>
+                                            <a href="#">Amet Collection</a>
+                                        </div>
+                                    </div>
+                                    <img src="C:\Users\Vishal\Documents\Easy\UI\Mailer\Asserts\FURNITURE.jpg"
+                                        class="Footer-Men-Image" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="sub-Header-Footer-HomeDecor">
+                <div class="sub-Header-Footers">
                     <div class="Footerdropdown">
                         <button class="Footerdropbtn">HomeDecor&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="10"
                                 height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -325,13 +536,76 @@
                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                             </svg></button>
                         <div class="Footer-dropdown-content6">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <div class="sub-Footer-dropdown-content2">
+                                <div class="Footer-Men-Text">
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Gifts</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Fragrances & Candles</a>
+                                            <a href="#">Stationery</a>
+                                            <a href="#">Games & Toys</a>
+                                            <a href="#">Frames</a>
+                                            <a href="#">Others</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Tableware</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Dinnerware</a>
+                                            <a href="#">Drinkware</a>
+                                            <a href="#">Flatware</a>
+                                            <a href="#">Serveware</a>
+                                            <a href="#">Others</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Decor</a>
+                                        </div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Clock</a>
+                                            <a href="#">vase</a>
+                                            <a href="#">Wall Art</a>
+                                            <a href="#">T-Lites & Lanterms</a>
+                                            <a href="#">Others</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Lighting</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Lamp</a>
+                                            <a href="#">Lamp Shades</a>
+                                            <a href="#">Hanging & String Lights</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Basketry</a>
+                                            <a href="#">Bundle Offers</a>
+                                            <a href="#">Interior Design Solutions</a>
+                                            <a href="#">Style Guides</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Men-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Lookbook</a>
+                                            <a href="#">Sale!</a>
+                                            <a href="#">Collection</a>
+                                        </div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Home Work Edition</a>
+                                            <a href="#">Festive Collection</a>
+                                            <a href="#">Gifting Collection</a>
+                                            <a href="#">Indigo Collection</a>
+                                            <a href="#">Spring Collection</a>
+                                            <a href="#">Summer Collection</a>
+                                        </div>
+                                    </div>
+                                    <img src="C:\Users\Vishal\Documents\Easy\UI\Mailer\Asserts\HomeDecor.jpg"
+                                        class="Footer-Men-Image" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="sub-Header-Footer-Beauty">
+                <div class="sub-Header-Footers">
                     <div class="Footerdropdown">
                         <button class="Footerdropbtn">Beauty&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="10"
                                 height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -339,13 +613,64 @@
                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                             </svg></button>
                         <div class="Footer-dropdown-content7">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <div class="sub-Footer-dropdown-content2">
+                                <div class="Footer-Men-Text">
+                                    <div class="Footer-Kids-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Skincare</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Face</a>
+                                            <a href="#">Bath & Body</a>
+                                            <a href="#">Hands & Feet</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Kids-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Haircare</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Hair Oils</a>
+                                            <a href="#">Shampoo</a>
+                                            <a href="#">Conditioners</a>
+                                            <a href="#">Hair Packs</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Kids-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Fragrances</a>
+                                        </div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Perfume Oils</a>
+                                            <a href="#">Essential Oils</a>
+                                            <a href="#">Body Sprays</a>
+                                            <a href="#">Eau De Parfum</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Kids-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Specials</a></div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Hand Cleansing</a>
+                                            <a href="#">Lip Butters</a>
+                                            <a href="#">Mosquito Repellant</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Kids-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Gift Sets</a>
+                                            <a href="#">New Launches</a>
+                                            <a href="#">Style Guides</a>
+                                        </div>
+                                    </div>
+                                    <div class="Footer-Kids-Text-column">
+                                        <div class="Footer-Men-Text-column-Header"><a href="#">Collection</a>
+                                        </div>
+                                        <div class="Footer-Men-Text-column-SubHeader">
+                                            <a href="#">Wellness</a>
+                                        </div>
+                                    </div>
+                                    <img src="C:\Users\Vishal\Documents\Easy\UI\Mailer\Asserts\BEAUTY.webp"
+                                        class="Footer-Men-Image" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="sub-Header-Footer-Food">
+                <div class="sub-Header-Footers">
                     <div class="Footerdropdown">
                         <button class="Footerdropbtn">Food&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="10"
                                 height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -353,13 +678,103 @@
                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                             </svg></button>
                         <div class="Footer-dropdown-content8">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <div class="sub-Footer-dropdown-content8">
+                                <div class="Footer-Food-Text">
+                                    <div class="Sub-Footer-Food-Text">
+                                        <div class="Footer-Food-Text-column">
+                                            <div class="Footer-Food-Text-column-Header"><a href="#">Spices Seasoning &
+                                                    Masalas</a></div>
+                                            <div class="Footer-Food-Text-column-SubHeader">
+                                                <a href="#">Spices</a>
+                                                <a href="#">Seasonings & Ready Masala</a>
+                                                <a href="#">Salad Dressings & Vinegars</a>
+                                            </div>
+                                        </div>
+                                        <div class="Footer-Food-Text-column">
+                                            <div class="Footer-Food-Text-column-Header"><a href="#">Driedfruits Nuts &
+                                                    Seeds</a></div>
+                                            <div class="Footer-Food-Text-column-SubHeader">
+                                                <a href="#">Candied & Dehydrated Food</a>
+                                                <a href="#">Seeds & Nuts</a>
+                                            </div>
+                                        </div>
+                                        <div class="Footer-Food-Text-column">
+                                            <div class="Footer-Food-Text-column-Header"><a href="#">Preserves</a>
+                                            </div>
+                                            <div class="Footer-Food-Text-column-SubHeader">
+                                                <a href="#">Conserves & Marmalades</a>
+                                                <a href="#">Jellies & Crushes</a>
+                                            </div>
+                                        </div>
+                                        <div class="Footer-Food-Text-column">
+                                            <div class="Footer-Food-Text-column-Header"><a href="#">Rice Flour &
+                                                    Pulses</a></div>
+                                            <div class="Footer-Food-Text-column-SubHeader">
+                                                <a href="#">Flour</a>
+                                                <a href="#">Pulses</a>
+                                                <a href="#">Rice & Grains</a>
+                                            </div>
+                                        </div>
+                                        <div class="Footer-Food-Text-column">
+                                            <div class="Footer-Food-Text-column-Header"><a href="#">Ready2Eat & Cook</a>
+                                                <a href="#">Snacks & Health Bars</a>
+                                                <a href="#">Breakfast Cereals</a>
+                                                <a href="#">Instant Mixes</a>
+                                            </div>
+                                        </div>
+                                        <div class="Footer-Food-Text-column">
+                                            <div class="Footer-Food-Text-column-Header"><a href="#">Sweeteners</a>
+                                            </div>
+                                            <div class="Footer-Food-Text-column-SubHeader">
+                                                <a href="#">Sugar</a>
+                                                <a href="#">Honey</a>
+                                            </div>
+                                        </div>
+                                        <div class="Footer-Food-Text-column">
+                                            <div class="Footer-Food-Text-column-Header"><a href="#">Tea Coffee &
+                                                    Beverages</a>
+                                            </div>
+                                            <div class="Footer-Food-Text-column-SubHeader">
+                                                <a href="#">Black Tea</a>
+                                                <a href="#">Green Tea</a>
+                                                <a href="#">Tulsi Tea</a>
+                                                <a href="#">Herbai Tea</a>
+                                                <a href="#">Infusion Tea</a>
+                                                <a href="#">Premium Tea</a>
+                                                <a href="#">Flavoured Tea</a>
+                                                <a href="#">Coffee</a>
+                                                <a href="#">Fruit Concentraters</a>
+                                                <a href="#">Powedered Drink & Soup Mixes</a>
+                                            </div>
+                                        </div>
+                                        <div class="Footer-Food-Text-column">
+                                            <div class="Footer-Food-Text-column-Header"><a href="#">Oils Ghee &
+                                                    Nutbutters</a>
+                                            </div>
+                                            <div class="Footer-Food-Text-column-SubHeader">
+                                                <a href="#">Ghee</a>
+                                                <a href="#">Nut Butters</a>
+                                                <a href="#">Oils</a>
+                                            </div>
+                                        </div>
+                                        <div class="Footer-Food-Text-column">
+                                            <div class="Footer-Food-Text-column-Header"><a href="#">Herbs</a>
+                                                <a href="#">Ayurvedic & Supplements</a>
+                                                <a href="#">Sauces</a>
+                                                <a href="#">Pickles & Chutneys</a>
+                                                <a href="#">Pasta & Noodles</a>
+                                                <a href="#">Style Guides</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="C:\Users\Vishal\Documents\Easy\UI\Mailer\Asserts\FOOD.jpg"
+                                        class="Footer-Food-Image" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="sub-Header-Footer-Collection">
+                <div class="sub-Header-Footers">
                     <div class="Footerdropdown">
                         <button class="Footerdropbtn">Collection&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="10"
                                 height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -367,39 +782,298 @@
                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                             </svg></button>
                         <div class="Footer-dropdown-content9">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <div class="sub-Footer-dropdown-content">
+                                <div class="Footer-Image">
+                                    <img src="C:\Users\Vishal\Documents\Easy\UI\Mailer\Asserts\COLLECTION-WELLNESS.jpg"
+                                        class="Footer-Image1" alt="">
+                                    <div class="Footer-Images-Title"><a>Wellness</a></div>
+                                </div>
+                                <div class="Footer-Image">
+                                    <img src="C:\Users\Vishal\Documents\Easy\UI\Mailer\Asserts\COLLECTION-WORK-CASUALS.jpg"
+                                        class="Footer-Image2" alt="">
+                                    <div class="Footer-Images-Title"><a>Work Casuals</a></div>
+                                </div>
+                                <div class="Footer-Image">
+                                    <img src="C:\Users\Vishal\Documents\Easy\UI\Mailer\Asserts\COLLECTION-RAJWADA.jpg"
+                                        class="Footer-Image3" alt="">
+                                    <div class="Footer-Images-Title"><a>Rajwada</a></div>
+                                </div>
+                                <div class="Footer-Image">
+                                    <img src="C:\Users\Vishal\Documents\Easy\UI\Mailer\Asserts\COLLECTION-WOOL.jpg"
+                                        class="Footer-Image4" alt="">
+                                    <div class="Footer-Images-Title"><a>Wool Collection</a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="sub-Header-Footer-CustomKurtas">
+                <div class="sub-Header-Footers">
                     <div class="Footerdropdown">
-                        <button class="Footerdropbtn">CustomKurtas&nbsp;<svg xmlns="http://www.w3.org/2000/svg"
-                                width="10" height="10" fill="currentColor" class="bi bi-chevron-down"
-                                viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                            </svg></button>
-                        <div class="Footer-dropdown-content10">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                        <div class="Footerdropbtn">
+                            <div class="Footer-Header">CustomKurtas&nbsp;</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
     <div class="middle-Container">
-        <div class="Sider-Container">
+        <div class="Sider-Container-Paging">
+            <a href="#">Home&nbsp;/</a>
+            <a href="#">&nbsp;Collection /</a>
+            <a href="#">&nbsp;Wool Collection</a>
         </div>
-        <div class="main-Compound">
+        <div class="sub-Middle-Container">
+            <div class="Sider-Container">
+                <div class="Sider-Container-Categary">
+                    <div class="Category-Title">Category</div>
+                    <hr>
+                    <div class="Category-SubTitle"><a>Men</a></div>
+                    <div class="Category-SubTitle"><a>Women</a></div>
+                </div>
+                <div class="Sider-Container-Filter">
+                    <div class="Sub-Sider-Container-Filter">
+                        <button type="button" class="collapsible">Price</button>
+                        <hr>
+                        <div class="content">
+                            <p>0 - 10000</p>
+                            <p>10000 - 20000</p>
+                        </div>
+                    </div>
+                    <div class="Sub-Sider-Container-Filter">
+                        <button type="button" class="collapsible">Color</button>
+                        <hr>
+                        <div class="content1">
+                            <p>Black</p>
+                            <p>Blue</p>
+                            <p>Green</p>
+                            <p>Beige</p>
+                            <p>Grey</p>
+                            <p>Maroon</p>
+                            <p>Pink</p>
+                            <p>Red</p>
+                            <p>Yellow</p>
+                            <p>Natural</p>
+                            <p>Brown</p>
+                            <p>Wine</p>
+                            <p>Orange</p>
+                            <p>Purple</p>
+                            <p>Turauoise</p>
+                            <p>Multi</p>
+                            <p>White</p>
+                            <p>Teal</p>
+                            <p>Beige</p>
+                        </div>
+                    </div>
+                    <div class="Sub-Sider-Container-Filter">
+                        <button type="button" class="collapsible">Size</button>
+                        <hr>
+                        <div class="content1">
+                            <p>XS</p>
+                            <p>S</p>
+                            <p>M</p>
+                            <p>L</p>
+                            <p>XL</p>
+                            <p>One Size</p>
+                        </div>
+                    </div>
+
+                    <div class="Sub-Sider-Container-Filter">
+                        <button type="button" class="collapsible">Fabric</button>
+                        <hr>
+                        <div class="content">
+                            <p>Wool</p>
+                            <p>Pashmina</p>
+                        </div>
+                    </div>
+
+                    <div class="Sub-Sider-Container-Filter">
+                        <button type="button" class="collapsible">Fit</button>
+                        <hr>
+                        <div class="content">
+                            <p>Regular Fit</p>
+                            <p>Comfort Fit</p>
+                        </div>
+                    </div>
+
+                    <div class="Sub-Sider-Container-Filter">
+                        <button type="button" class="collapsible">Sleeves</button>
+                        <hr>
+                        <div class="content">
+                            <p>Sleeveless</p>
+                            <p>Full Sleeves</p>
+                        </div>
+                    </div>
+
+                    <div class="Sub-Sider-Container-Filter">
+                        <button type="button" class="collapsible">Neck</button>
+                        <hr>
+                        <div class="content">
+                            <p>Chinese Collar</p>
+                            <p>Raised Neck</p>
+                        </div>
+                    </div>
+
+                    <div class="Sub-Sider-Container-Filter">
+                        <button type="button" class="collapsible">Pattern</button>
+                        <hr>
+                        <div class="content">
+                            <p>Solid</p>
+                            <p>Embroidered</p>
+                            <p>Striped</p>
+                            <p>Printed</p>
+                        </div>
+                    </div>
+
+                    <div class="Sub-Sider-Container-Filter">
+                        <button type="button" class="collapsible">Craft</button>
+                        <hr>
+                        <div class="content">
+                            <p>Jamdani</p>
+                        </div>
+                    </div>
+
+                    <div class="Sub-Sider-Container-Filter">
+                        <button type="button" class="collapsible">Style</button>
+                        <hr>
+                        <div class="content">
+                            <p>A-Line</p>
+                            <p>Straight</p>
+                            <p>Flared</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-Compound">
+                <div class="main-Compound-Header">
+                    <div class="main-Compound-Header-Title">Showing Results</div>
+                    <div class="main-Compound-Header-Display-Type">
+                        <div class="main-Compound-Header-Display-Type-Text">View By:</div>
+                        <div class="main-Compound-Header-Display-Type-Button">
+                            <button class="viewbtn"><i class="fa fa-bars"></i></button>
+                            <button class="viewbtn1"><i class="fa fa-align-justify"></i></button>
+                        </div>
+                    </div>
+                    <div class="main-Compound-Header-Sort">
+                        <div class="main-Compound-Header-Sort-By-Text">Sort By </div>
+                        <div class="main-Compound-Header-Sort-By-DropDown">
+                            <div class="sortBydropdown">
+                                <button onclick="myFunction()" class="sortBydropbtn">Relevance</button>
+                                <div id="mysortBydropdown" class="sortBydropdown-content">
+                                    <a href="#home">Relevance</a>
+                                    <a href="#about">Display Name - Asc</a>
+                                    <a href="#contact">Display Name - Desc</a>
+                                    <a href="#contact">Price: Low To High</a>
+                                    <a href="#contact">Price: High To Low</a>
+                                    <a href="#contact">New To Old</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-Compound-Body"></div>
+            </div>
         </div>
     </div>
     <div class="Footer-Container">
-
+        <div class="Footer-Container-1">
+            <div class="Footer-Container-Colume">
+                <div class="Footer-Container-Colume-Header">Let Us Help You</div>
+                <div class="Footer-Container-Colume-SubHeader">
+                    <a href="#">Order Tracking</a>
+                    <a href="#">Bulk Orders</a>
+                    <a href="#">Store Locator</a>
+                    <a href="#">Franchise Form</a>
+                    <a href="#">Furniture Warranty Policy</a>
+                </div>
+            </div>
+            <div class="Footer-Container-Colume">
+                <div class="Footer-Container-Colume-Header">Support</div>
+                <div class="Footer-Container-Colume-SubHeader">
+                    <a href="#">Customer Service</a>
+                    <a href="#">How To Order</a>
+                    <a href="#">Billing And Payments</a>
+                    <a href="#">Shipping And Delivery</a>
+                    <a href="#">Returns And Exchanges</a>
+                    <a href="#">FAQs</a>
+                </div>
+            </div>
+            <div class="Footer-Container-Colume">
+                <div class="Footer-Container-Colume-Header">Company</div>
+                <div class="Footer-Container-Colume-SubHeader">
+                    <a href="#">About Us</a>
+                    <a href="#">Style Guides</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms Of Use</a>
+                    <a href="#">Business Enquiries</a>
+                    <a href="#">The Fabindia Schools</a>
+                </div>
+            </div>
+            <div class="Footer-Container-Colume">
+                <div class="Footer-Container-Colume-Header">About Fabindia</div>
+                <div class="Footer-Container-Colume-SubHeader">
+                    <a href="#">60 Years Of Fabindia</a>
+                    <a href="#">Philosophy</a>
+                    <a href="#">About Fabindia Products</a>
+                    <a href="#">Organic Certification</a>
+                    <a href="#">Fabric Care</a>
+                    <a href="#">FabCare</a>
+                    <a href="#">Fabfamily- Loyalty Program</a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="Footer-Container-Colume">
+                <div class="Footer-Container-Colume-Header"></div>
+                <div class="Footer-Container-Colume-SubHeader"></div>
+                <div class="Footer-Container-Colume-SubHeader"></div>
+                <div class="Footer-Container-Colume-SubHeader"></div>
+                <div class="Footer-Container-Colume-SubHeader"></div>
+                <div class="Footer-Container-Colume-SubHeader"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="Footer-Container-2"></div>
     </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                content = content.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+
+        function myFunction() {
+            document.getElementById("mysortBydropdown").classList.toggle("show");
+        }
+
+        // Close the sortBydropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.sortBydropbtn')) {
+                var sortBydropdowns = document.getElementsByClassName("sortBydropdown-content");
+                var i;
+                for (i = 0; i < sortBydropdowns.length; i++) {
+                    var opensortBydropdown = sortBydropdowns[i];
+                    if (opensortBydropdown.classList.contains('show')) {
+                        opensortBydropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 
 </body>
 
